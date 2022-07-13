@@ -13,6 +13,24 @@ Este repositório contém um projeto desenvolvido enquanto pessoa estudante da @
 
   <br />
 
+# Tecnologias<br />
+
+* Docker
+
+* MySQL
+
+* Node.js
+
+* Express
+
+* Mocha
+
+* Chai
+
+* Express-rescue
+
+<br />
+
 
 # Funcionalidades
 <br />
@@ -25,14 +43,13 @@ Este repositório contém um projeto desenvolvido enquanto pessoa estudante da @
 
     - Ler, deletar e atualizar venda.
 
-  - Para **todos os endpoints** garanta que:
+  - Para **todos os endpoints** garante que:
 
-    - Caso o recurso **não seja encontrado**, **aconteça um erro** ou **haja dados inválidos** na sua requisição, sua API deve retornar o status HTTP adequado com o body `{ message: <mensagem de erro> }`;
+    - Caso o recurso **não seja encontrado**, **aconteça um erro** ou **haja dados inválidos** na sua requisição, a API deve retornar o status HTTP adequado com o body `{ message: <mensagem de erro> }`;
 
     - Todos os retornos de erro devem seguir o mesmo formato.
 
-   <br />
- </details>
+<br />
 
 # Rodando a aplicação
 <br />
@@ -43,12 +60,38 @@ Este repositório contém um projeto desenvolvido enquanto pessoa estudante da @
 
   > Use o comando `docker exec -it store_manager bash`.
 
-  > Instale as dependências [**Caso existam**] com `npm install`.
+  > Instale as dependências com `npm install`.
 
   > Use o comando `npm start` para rodar a aplicação.
 
   > Use o comando `npm test:mocha` para rodar os testes (Testes unitários cobrindo 100% da aplicação).
 
+# Back End
+<br />
+
+A aplicação apresenta as seguintes rotas disponíveis:
+
+* Método GET `/products/`, lista todos os produtos;
+
+* Método POST `/products/`, cria um novo produto;
+
+* Método GET `/products/:id`, lista um produto pelo seu id;
+
+* Método PUT `/products/:id`, edita um determinado produto;
+
+* Método DELETE `/products/:id`, apaga um produto do banco de dados;
+
+* Método GET `/sales/`, lista todos as vendas;
+
+* Método POST `/sales/`, cria uma nova venda;
+
+* Método GET `/sales/:id`, lista uma venda pelo seu id;
+
+* Método PUT `/sales/:id`, edita uma determinada venda;
+
+* Método DELETE `/sales/:id`, apaga uma venda do banco de dados;
+
+<br />
 
 # Detalhes
 <br />
@@ -64,4 +107,9 @@ Todos os endpoints estão no padrão REST
   - E retorna os códigos de status corretos (recurso criado, erro de validação, autorização, etc).
 
   <br />
+
+# Feedbacks
+<br />
+
+Caso tenha alguma sugestão ou tenha encontrado algum erro no código, estou disponível para contato no meu [LinkedIn](https://www.linkedin.com/in/rafael-de-jesus-lima/)
 
